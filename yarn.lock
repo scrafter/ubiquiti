@@ -179,6 +179,12 @@
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/@ng-bootstrap/ng-bootstrap/-/ng-bootstrap-2.0.0.tgz#65f78c7dd5a8ac424f44bb2050a9eab247cdeb0c"
 
+"@ng-select/ng-select@^2.0.3":
+  version "2.0.3"
+  resolved "https://registry.yarnpkg.com/@ng-select/ng-select/-/ng-select-2.0.3.tgz#6e424ee89f6213d41955fda65a0f78323f5bb5a2"
+  dependencies:
+    tslib "^1.9.0"
+
 "@ngtools/webpack@6.0.3":
   version "6.0.3"
   resolved "https://registry.yarnpkg.com/@ngtools/webpack/-/webpack-6.0.3.tgz#baa9caaa8b21be16c30b2b15f92eb2afb8eb04c0"

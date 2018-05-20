@@ -1,3 +1,26 @@
-<p>
-  control-panel works!
-</p>
+<form [formGroup]="settingsForm"
+      (submit)="onSubmit()"
+      class="control-panel__form">
+  <app-select-field [label]="'TX Power'"
+                    [idKey]="'value'"
+                    [labelKey]="'label'"
+                    [parentFormGroup]="settingsForm"
+                    [name]="'power'"
+                    [selected]="this.settingsForm.value.power"
+                    [options]="powerOptions"></app-select-field>
+  <app-radio-field [label]="'Radio'"
+                   [name]="'radio'"
+                   [idKey]="'value'"
+                   [parentFormGroup]="settingsForm"
+                   [options]="radioOptions"></app-radio-field>
+  <div class="control-panel__separator"></div>
+  <div class="control-panel__buttons">
+    <app-button [type]="'submit'"
+                [label]="'Save'"
+                [color]="'primary'"></app-button>
+    <app-button [label]="'Cancel'"
+                [type]="'button'"
+                (onClick)="onReset()"
+                [color]="'link'"></app-button>
+  </div>
+</form>

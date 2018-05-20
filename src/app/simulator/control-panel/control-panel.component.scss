@@ -1,0 +1,25 @@
+:host {
+  width: 300px;
+  height: 100vh;
+  background-color: #000;
+  display: flex;
+  flex-direction: column;
+  padding: 15px 10px;
+}
+.control-panel__separator {
+  height: 1px;
+  width: 100%;
+  background-color: #fff;
+}
+.control-panel__buttons {
+  margin-top: 12px;
+  display: flex;
+  justify-content: center;
+}
+
+app-select-field {
+  margin-bottom: 14px;
+}
+app-radio-field {
+  margin-bottom: 14px;
+}

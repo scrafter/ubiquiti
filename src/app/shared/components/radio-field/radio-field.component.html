@@ -1,0 +1,12 @@
+<app-field [label]="label">
+  <div class="radio-field"
+       *ngFor="let option of options"
+       [ngClass]="{'checked': isChecked(option[idKey])}">
+    <input type="radio"
+           class="radio-field__input"
+           (change)="select(option)"
+           [value]="option[idKey]"
+           [checked]="isChecked(option[idKey])"/>
+    <span class="radio-field__label">{{option.label}}</span>
+  </div>
+</app-field>

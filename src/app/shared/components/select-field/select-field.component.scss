@@ -1,0 +1,14 @@
+:host {
+  display: block;
+}
+:host /deep/ {
+  .ng-select.custom {
+    border-radius: 0;
+  }
+  .ng-select.custom .ng-select-container  {
+    background-color: transparent;
+    border-radius: 0;
+    border: 1px solid #ccc;
+    color: #fff;
+  }
+}

@@ -1,0 +1,10 @@
+<app-field [label]="label">
+  <ng-select [items]="options"
+             class="custom"
+             [formControl]="parentFormGroup.controls[name]"
+             [bindLabel]="labelKey"
+             [bindValue]="idKey"
+             [clearable]="false"
+             [(ngModel)]="model">
+  </ng-select>
+</app-field>
