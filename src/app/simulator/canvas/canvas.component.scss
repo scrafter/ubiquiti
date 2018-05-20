@@ -1,3 +1,9 @@
 :host {
+  display: flex;
   flex: 1;
+  background-color: yellow;
+}
+.canvas-container {
+  flex: 100%;
+  background: linear-gradient(#EDEDED, #CCCCCC);
 }

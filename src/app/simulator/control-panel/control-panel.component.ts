@@ -2,9 +2,9 @@ import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
 
 const powerOptions = [
-  { label: 'High(4Bm)', value: 4, },
-  { label: 'Medium(-6Bm)', value: -6, },
-  { label: 'Low(-16Bm)', value: -16, },
+  { label: 'High(4dBm)', value: 4, },
+  { label: 'Medium(-6dBm)', value: -6, },
+  { label: 'Low(-16dBm)', value: -16, },
 ];
 const radioOptions = [
   { label: '2.4 GHz', value: 2.4 },
